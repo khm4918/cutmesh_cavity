@@ -1,4 +1,4 @@
-# no_cavity_convmesh
-Case file with sinusoidal perturbation but no surrounding cavities.
+# polygon_cavity_cutmesh
+Case file with polygon cavities surrounding perturbation
 Aximesh geometry with cutoff centre.
 Initial fields preset.
