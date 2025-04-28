@@ -20,22 +20,22 @@ FoamFile
     {
         type            wall;
         inGroups        List<word> 1(wall);
-        nFaces          200200;
-        startFace       199300;
+        nFaces          80100;
+        startFace       79500;
     }
     wedges
     {
         type            symmetry;
         inGroups        List<word> 1(symmetry);
-        nFaces          1000;
-        startFace       399500;
+        nFaces          800;
+        startFace       159600;
     }
     centre
     {
         type            wall;
         inGroups        List<word> 1(wall);
-        nFaces          200;
-        startFace       400500;
+        nFaces          100;
+        startFace       160400;
     }
 )
 
