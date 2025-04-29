@@ -14,28 +14,49 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-3
+6
 (
-    walls
+    symmetryX
     {
-        type            wall;
-        inGroups        List<word> 1(wall);
-        nFaces          80100;
-        startFace       79500;
+        type            symmetryPlane;
+        inGroups        List<word> 1(symmetryPlane);
+        nFaces          150;
+        startFace       29750;
     }
-    wedges
+    symmetryY
     {
-        type            symmetry;
-        inGroups        List<word> 1(symmetry);
-        nFaces          800;
-        startFace       159600;
+        type            symmetryPlane;
+        inGroups        List<word> 1(symmetryPlane);
+        nFaces          150;
+        startFace       29900;
     }
-    centre
+    front
+    {
+        type            empty;
+        inGroups        List<word> 1(empty);
+        nFaces          15000;
+        startFace       30050;
+    }
+    back
+    {
+        type            empty;
+        inGroups        List<word> 1(empty);
+        nFaces          15000;
+        startFace       45050;
+    }
+    innerWall
     {
         type            wall;
         inGroups        List<word> 1(wall);
         nFaces          100;
-        startFace       160400;
+        startFace       60050;
+    }
+    outerWall
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          100;
+        startFace       60150;
     }
 )
 

@@ -20,15 +20,27 @@ internalField   uniform 298;
 
 boundaryField
 {
-    walls
+    symmetryX
+    {
+        type            symmetryPlane;
+    }
+    symmetryY
+    {
+        type            symmetryPlane;
+    }
+    front
+    {
+        type            empty;
+    }
+    back
+    {
+        type            empty;
+    }
+    innerWall
     {
         type            zeroGradient;
     }
-    wedges
-    {
-        type            symmetry;
-    }
-    centre
+    outerWall
     {
         type            zeroGradient;
     }
