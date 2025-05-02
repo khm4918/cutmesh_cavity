@@ -19,5 +19,7 @@ runApplication decomposePar
 # -- run the calc
 runParallel $(getApplication)
 
+# -- Reconstruct the case
+runApplication reconstructPar
 
 # ----------------------------------------------------------------- end-of-file
