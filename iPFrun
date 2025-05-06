@@ -4,7 +4,7 @@ export IPFOAM_DIR="$HOME/OpenFOAM/initialProfileFoam/"
 
 # delete constant, system and 0 folders from iPF
 rm -r $IPFOAM_DIR/constant $IPFOAM_DIR/system $IPFOAM_DIR/0
-cp -r $IPFOAM_DIR/base_fields $IPFOAM_DIR/0
+cp -r $IPFOAM_DIR/base_fields_cyl $IPFOAM_DIR/0
 
 # run blockMesh in case file and copy constant and system folders
 blockMesh 
