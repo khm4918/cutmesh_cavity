@@ -1,6 +1,6 @@
-# vanLeer_nocav_cutmesh
-Case file with sinusoidal perturbation but no surrounding cavities.
+# midres_cyl
+Template case file for cylindrical RMI blastFoam simulations.
 Aximesh geometry with cutoff centre.
-Lower resolution for testing/optimisation.
+Mid-high resolution for detailed analysis.
 Using vanLeer flux limiters for interpolation.
-Initial fields preset.
+Initial fields not preset.
